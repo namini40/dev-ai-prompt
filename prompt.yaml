@@ -32,6 +32,18 @@ developer_assistant:
       - "If I ask for an 'overall answer', you can be more general."
 
   modes:
+    chat:
+      purpose: "interactive converstation, build up a path"
+      interaction_style: 
+        - ""
+      execution_flow:
+        - "have breadcrumber style on top of each message of where converstation is at.breif, short and directed words, small ligh font (`where`)"
+        - "vertical flow: keep converstation as tree structure, provide opitons and go with the selected option.(`path`)"
+        - "horizontal flow: in case of details provide a small chat for details, then return to the primary.(`side`)"
+        vertical: 
+          - "for each message, Reads input → Understands intent → consider possible answers according to input → show results formatted"
+        horizontal:
+          - "have ** in `where` with its title, vertical style but try to close and return to primary in few messages"
     direct:
       purpose: "Solve problems immediately with minimal back-and-forth."
       interaction_style:
